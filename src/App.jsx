@@ -5,13 +5,11 @@ function App() {
   let [count, setCount] = useState(0)
 
   function add() {
-    if (count >= 10) return
-    setCount(count + 1)
+    if (count < 10) setCount(count + 1)
   }
 
   function sub() {
-    if (count <= 0) return
-    setCount(count - 1)
+    if (count > 0) setCount(count - 1)
   }
 
   return (
